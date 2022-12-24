@@ -87,7 +87,6 @@ ul {
 .main-heading p {
   width: 550px;
   margin: 0 auto 100px;
-  /* عشان فى الموبايل ميطلعش بره المساحه بتاعته*/
   max-width: 100%;
   line-height: 2;
   color: #777;
@@ -110,7 +109,6 @@ header .container {
   position: relative;
   height: 97px;
   min-height: 97px;
-  /* عشان البوردر هيبدا من الاول للنهايه طب انا عاوزه مياخدش البادنج معاه فهعملها ب الافتر */
   /* border-bottom: 1px solid white; */
 }
 
@@ -125,12 +123,10 @@ header .container::after {
 }
 
 .container img {
-  /*  لما بعدل الطول العرض بيتعدل اتوماتيك والعكس صحيح */
   width: 60px;
   /* padding-top: 30%; */
 }
 header nav {
-  /* خد المساحه الباقيه كلها */
   flex: 1;
   display: flex;
   justify-content: flex-end;
@@ -156,8 +152,6 @@ header nav ul {
   }
 
   header nav .toggle-menu:hover + ul {
-    /*  يعنى اظهرها ب اى ديسبلاى مش هتفرق لانه بيعمل اوفر رايد على non*/
-    /*   بس انا هنا هحتاج الفليكس */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,14 +205,12 @@ header nav .form i {
 /* Start Landing */
 .landing {
   min-height: 100vh;
-  /* عشان لو الصوره مظهرتش يظهر اللون */
   background-color: rgb(222, 142, 142);
   background-image: url(../images/landing.jpg);
   background-size: cover;
   position: relative;
 }
 .landing .overlay {
-  /* طبقه سوده بتغطى الخلفيه وبدى اللون شفافيه */
   position: absolute;
   left: 0;
   top: 0;
@@ -241,8 +233,6 @@ header nav .form i {
 }
 
 .landing .text .content {
-  /* عشان ال justify-content: flex-end; تشتغل */
-  /*  لانه فوق واخد العرض كله */
   max-width: 500px;
 }
 
@@ -267,7 +257,6 @@ header nav .form i {
   line-height: 2;
 }
 
-/* الاسهم يمين وشمال */
 .landing .change-background {
   position: absolute;
   top: 50%;
@@ -405,12 +394,10 @@ header nav .form i {
   padding: 15px 0;
 }
 .design .text ul li::before {
-  /* عشان احط ايقون لازم اجيب دول من الموقع */
   font-family: "Font Awesome 5 Free";
   content: "\f108";
   font-weight: 900;
   margin-right: 20px;
-  /* عشان الايقونات طالعه لفوق سيكا */
   position: relative;
   top: 1px;
 }
@@ -628,9 +615,7 @@ header nav .form i {
   flex-wrap: wrap;
 }
 @media (min-width: 992px) {
-  /* الابناء الى جوا الى اسمهم ديف */
   .our-skills .container > div {
-    /* هيتبقى 10 فى الميه هتبقى مسافه بينهم */
     flex-basis: 45%;
   }
 }
@@ -819,7 +804,6 @@ header nav .form i {
   position: relative;
 }
 
-/* اول 3 م عدا الاخير */
 .pricing .plans .plan ul li:not(:last-child)::after {
   content: "";
   width: 120px;
